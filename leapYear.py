@@ -2,5 +2,8 @@
 # Enter a number when requested for user input, and it will print out whether it is a leap year or not.
 
 def leapYear(year):
-    pass
+    if (year % 4 == 0 and year % 100 !=0) or (year % 400 ==0):
+        return("It is a leap year.")
+    else:
+        return("It is not a leap year.")
 
